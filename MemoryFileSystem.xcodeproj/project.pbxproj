@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      OBJ_1 = {
+         isa = "PBXProject";
+         attributes = {
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = OBJ_2;
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "English";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en",
+         );
+         mainGroup = OBJ_5;
+         productRefGroup = OBJ_26;
+         projectDirPath = ".";
+         targets = (
+            OBJ_31,
+            OBJ_42,
+            OBJ_50,
+            OBJ_65,
+         );
+      };
+      OBJ_10 = {
+         isa = "PBXFileReference";
+         path = "FileSystem.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_11 = {
+         isa = "PBXFileReference";
+         path = "Folder.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_12 = {
+         isa = "PBXFileReference";
+         path = "Resource.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_13 = {
+         isa = "PBXFileReference";
+         path = "SymbolFile.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_14 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_15,
+            OBJ_16,
+         );
+         name = "Optional";
+         path = "Sources/Optional";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_15 = {
+         isa = "PBXFileReference";
+         path = "ArrayOptional.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_16 = {
+         isa = "PBXFileReference";
+         path = "Optional.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_17 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_18,
+            OBJ_19,
+            OBJ_20,
+            OBJ_21,
+            OBJ_22,
+         );
+         name = "MemoryFileSystem";
+         path = "Sources/MemoryFileSystem";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_18 = {
+         isa = "PBXFileReference";
+         path = "MemoryFile.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_19 = {
+         isa = "PBXFileReference";
+         path = "MemoryFileSystem.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_2 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_3,
+            OBJ_4,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_20 = {
+         isa = "PBXFileReference";
+         path = "MemoryFolder.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_21 = {
+         isa = "PBXFileReference";
+         path = "MemoryResource.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_22 = {
+         isa = "PBXFileReference";
+         path = "MemorySymbol.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_23 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_24,
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_24 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_25,
+         );
+         name = "MemoryFileSystemTests";
+         path = "Tests/MemoryFileSystemTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_25 = {
+         isa = "PBXFileReference";
+         path = "MemoryFileSystemTests.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_26 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_27,
+            OBJ_28,
+            OBJ_29,
+            OBJ_30,
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_27 = {
+         isa = "PBXFileReference";
+         path = "FileSystem.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_28 = {
+         isa = "PBXFileReference";
+         path = "Optional.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_29 = {
+         isa = "PBXFileReference";
+         path = "MemoryFileSystem.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_3 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            SWIFT_VERSION = "3.0";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      OBJ_30 = {
+         isa = "PBXFileReference";
+         path = "MemoryFileSystemTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_31 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_32;
+         buildPhases = (
+            OBJ_35,
+            OBJ_41,
+         );
+         dependencies = (
+         );
+         name = "FileSystem";
+         productName = "FileSystem";
+         productReference = OBJ_27;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_32 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_33,
+            OBJ_34,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_33 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "MemoryFileSystem.xcodeproj/FileSystem_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "FileSystem";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "FileSystem";
+         };
+         name = "Debug";
+      };
+      OBJ_34 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "MemoryFileSystem.xcodeproj/FileSystem_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "FileSystem";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "FileSystem";
+         };
+         name = "Release";
+      };
+      OBJ_35 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_36,
+            OBJ_37,
+            OBJ_38,
+            OBJ_39,
+            OBJ_40,
+         );
+      };
+      OBJ_36 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_9;
+      };
+      OBJ_37 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_10;
+      };
+      OBJ_38 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_11;
+      };
+      OBJ_39 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_12;
+      };
+      OBJ_4 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            SWIFT_VERSION = "3.0";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      OBJ_40 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_13;
+      };
+      OBJ_41 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      OBJ_42 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_43;
+         buildPhases = (
+            OBJ_46,
+            OBJ_49,
+         );
+         dependencies = (
+         );
+         name = "Optional";
+         productName = "Optional";
+         productReference = OBJ_28;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_43 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_44,
+            OBJ_45,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_44 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "MemoryFileSystem.xcodeproj/Optional_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Optional";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "Optional";
+         };
+         name = "Debug";
+      };
+      OBJ_45 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "MemoryFileSystem.xcodeproj/Optional_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Optional";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "Optional";
+         };
+         name = "Release";
+      };
+      OBJ_46 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_47,
+            OBJ_48,
+         );
+      };
+      OBJ_47 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_15;
+      };
+      OBJ_48 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_16;
+      };
+      OBJ_49 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      OBJ_5 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_6,
+            OBJ_7,
+            OBJ_23,
+            OBJ_26,
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      OBJ_50 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_51;
+         buildPhases = (
+            OBJ_54,
+            OBJ_60,
+         );
+         dependencies = (
+            OBJ_63,
+            OBJ_64,
+         );
+         name = "MemoryFileSystem";
+         productName = "MemoryFileSystem";
+         productReference = OBJ_29;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_51 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_52,
+            OBJ_53,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_52 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "MemoryFileSystem.xcodeproj/MemoryFileSystem_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "MemoryFileSystem";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "MemoryFileSystem";
+         };
+         name = "Debug";
+      };
+      OBJ_53 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "MemoryFileSystem.xcodeproj/MemoryFileSystem_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "MemoryFileSystem";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "MemoryFileSystem";
+         };
+         name = "Release";
+      };
+      OBJ_54 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_55,
+            OBJ_56,
+            OBJ_57,
+            OBJ_58,
+            OBJ_59,
+         );
+      };
+      OBJ_55 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_18;
+      };
+      OBJ_56 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_19;
+      };
+      OBJ_57 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_20;
+      };
+      OBJ_58 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_21;
+      };
+      OBJ_59 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_22;
+      };
+      OBJ_6 = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_60 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            OBJ_61,
+            OBJ_62,
+         );
+      };
+      OBJ_61 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_27;
+      };
+      OBJ_62 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_28;
+      };
+      OBJ_63 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_31;
+      };
+      OBJ_64 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_42;
+      };
+      OBJ_65 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_66;
+         buildPhases = (
+            OBJ_69,
+            OBJ_71,
+         );
+         dependencies = (
+            OBJ_75,
+            OBJ_76,
+            OBJ_77,
+         );
+         name = "MemoryFileSystemTests";
+         productName = "MemoryFileSystemTests";
+         productReference = OBJ_30;
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      OBJ_66 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_67,
+            OBJ_68,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_67 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "MemoryFileSystem.xcodeproj/MemoryFileSystemTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            TARGET_NAME = "MemoryFileSystemTests";
+         };
+         name = "Debug";
+      };
+      OBJ_68 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "MemoryFileSystem.xcodeproj/MemoryFileSystemTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            TARGET_NAME = "MemoryFileSystemTests";
+         };
+         name = "Release";
+      };
+      OBJ_69 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_70,
+         );
+      };
+      OBJ_7 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_8,
+            OBJ_14,
+            OBJ_17,
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_70 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_25;
+      };
+      OBJ_71 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            OBJ_72,
+            OBJ_73,
+            OBJ_74,
+         );
+      };
+      OBJ_72 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_27;
+      };
+      OBJ_73 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_28;
+      };
+      OBJ_74 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_29;
+      };
+      OBJ_75 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_31;
+      };
+      OBJ_76 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_42;
+      };
+      OBJ_77 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_50;
+      };
+      OBJ_8 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_9,
+            OBJ_10,
+            OBJ_11,
+            OBJ_12,
+            OBJ_13,
+         );
+         name = "FileSystem";
+         path = "Sources/FileSystem";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_9 = {
+         isa = "PBXFileReference";
+         path = "File.swift";
+         sourceTree = "<group>";
+      };
+   };
+   rootObject = OBJ_1;
+}
